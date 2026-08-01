@@ -1,0 +1,1625 @@
+```html
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zemné a výkopové práce SK & CZ | RUMANA - Minibagre & Dumpery</title>
+    <meta name="description" content="Kompletné zemné, výkopové a terénne práce v SR a ČR s dopravou strojov zadarmo. Detailný prehľad lokalít, výhod a vykonávaných prác bez poplatkov za kilometre.">
+    <link rel="canonical" href="https://www.rumana.sk/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.rumana.sk/">
+    <meta property="og:title" content="Zemné a výkopové práce SK & CZ | RUMANA">
+    <meta property="og:description" content="Profesionálne výkopové práce, prípojky, žumpy, ČOV a terénne úpravy od roku 2008. Doprava strojov zadarmo po celej SR aj ČR.">
+    <meta property="og:image" content="https://www.rumana.sk/og-image.jpg">
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://www.rumana.sk/#organization",
+          "name": "RUMANA zemné práce",
+          "url": "https://www.rumana.sk/",
+          "telephone": "+421905835191",
+          "email": "bagerdumper@gmail.com",
+          "priceRange": "$$",
+          "foundingDate": "2008",
+          "description": "Špecialisti na kompletné zemné, výkopové a terénne práce, inžinierske siete a autodopravu dumpermi na Slovensku a v Českej republike. Doprava strojov zadarmo.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "SK"
+          },
+          "areaServed": ["SK", "CZ"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.rumana.sk/#website",
+          "url": "https://www.rumana.sk/",
+          "name": "RUMANA zemné práce",
+          "publisher": {"@id": "https://www.rumana.sk/#organization"}
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-dark: #090d16;
+            --bg-card: #111827;
+            --bg-card-hover: #1e293b;
+            --accent-orange: #f97316;
+            --accent-light: #fb923c;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-glass: rgba(255, 255, 255, 0.08);
+            --glass-bg: rgba(17, 24, 39, 0.75);
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-family);
+            line-height: 1.6;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section {
+            padding: 5.5rem 0;
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        .text-center { text-align: center; }
+        .text-accent { color: var(--accent-orange); }
+
+        .section-title {
+            font-size: 2.75rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+        }
+
+        .section-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 1000px;
+            margin: 0 auto 3.5rem auto;
+            line-height: 1.7;
+        }
+
+        /* GLASSMORPHISM CARD */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-glass);
+            border-radius: 1rem;
+            padding: 2.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(249, 115, 22, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(249, 115, 22, 0.2);
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.95rem 1.85rem;
+            font-weight: 700;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 0.95rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-light));
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(249, 115, 22, 0.39);
+        }
+
+        .btn-primary:hover {
+            opacity: 0.92;
+            box-shadow: 0 6px 22px rgba(249, 115, 22, 0.55);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-glass);
+            color: var(--text-main);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(9, 13, 22, 0.95);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 5rem;
+        }
+
+        .logo {
+            font-size: 1.85rem;
+            font-weight: 900;
+            letter-spacing: -0.05em;
+            color: #fff;
+        }
+
+        .logo span { color: var(--accent-orange); }
+
+        .nav-menu {
+            display: flex;
+            gap: 1.2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover { color: var(--accent-orange); }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .phone-link {
+            font-weight: 800;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: calc(100vh - 5rem);
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: radial-gradient(circle at 50% 20%, rgba(249, 115, 22, 0.18), transparent 65%);
+            padding: 5rem 0;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.08;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-desc {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 2.25rem;
+            line-height: 1.75;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(249, 115, 22, 0.15);
+            border: 1px solid var(--accent-orange);
+            color: var(--accent-orange);
+            padding: 0.45rem 1.2rem;
+            border-radius: 2rem;
+            font-size: 0.85rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.03em;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* VECTOR GRAPHICS */
+        .vector-illustration {
+            width: 100%;
+            height: 100%;
+            min-height: 380px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vector-illustration svg {
+            width: 100%;
+            max-width: 440px;
+            height: auto;
+        }
+
+        /* STATS SECTION */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        .stat-value {
+            font-size: 2.75rem;
+            font-weight: 900;
+            color: var(--accent-orange);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* GRIDS */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 2rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 2rem;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            background: rgba(249, 115, 22, 0.12);
+            border-radius: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--accent-orange);
+            font-weight: 800;
+        }
+
+        /* TABLES */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            background: var(--bg-card);
+            border-radius: 0.85rem;
+            overflow: hidden;
+            border: 1px solid var(--border-glass);
+        }
+
+        th, td {
+            padding: 1.35rem 1.6rem;
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--accent-orange);
+            font-weight: 800;
+            font-size: 1rem;
+        }
+
+        tr:last-child td { border-bottom: none; }
+
+        /* SEO RICH TEXT BOXES */
+        .rich-text-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 1rem;
+            padding: 2.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .rich-text-card h3 {
+            color: var(--accent-orange);
+            margin-bottom: 1rem;
+            font-size: 1.45rem;
+        }
+
+        .rich-text-card p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-size: 0.98rem;
+            line-height: 1.8;
+        }
+
+        .rich-text-card ul {
+            color: var(--text-muted);
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        /* LOKALITY SEKCIA - PREPRACOVANÝ ROZPIS LOKALÍT */
+        .country-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            margin-top: 1.5rem;
+            border-bottom: 2px solid var(--accent-orange);
+            padding-bottom: 0.75rem;
+        }
+
+        .country-header h3 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .country-flag {
+            font-size: 1.8rem;
+        }
+
+        .location-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 1.25rem;
+            padding: 2.25rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+
+        .location-card:hover {
+            border-color: var(--accent-orange);
+            box-shadow: 0 15px 35px rgba(249, 115, 22, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .location-title-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.25rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 0.85rem;
+        }
+
+        .location-name {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .location-badge-free {
+            background: rgba(74, 222, 128, 0.12);
+            border: 1px solid #4ade80;
+            color: #4ade80;
+            padding: 0.35rem 0.85rem;
+            border-radius: 2rem;
+            font-size: 0.78rem;
+            font-weight: 800;
+        }
+
+        .location-block-title {
+            color: var(--accent-orange);
+            font-size: 0.92rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .location-text {
+            color: var(--text-muted);
+            font-size: 0.94rem;
+            line-height: 1.65;
+            margin-bottom: 0.85rem;
+        }
+
+        .location-list {
+            list-style: none;
+            margin-bottom: 1.25rem;
+        }
+
+        .location-list li {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.45rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .location-list li span.check {
+            color: var(--accent-orange);
+            font-weight: 900;
+        }
+
+        .location-call-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-orange);
+            font-weight: 800;
+            font-size: 0.92rem;
+            margin-top: 1rem;
+            transition: color 0.2s ease;
+        }
+
+        .location-call-link:hover {
+            color: var(--accent-light);
+            text-decoration: underline;
+        }
+
+        /* CALL TO ACTION SECTION */
+        .cta-call-box {
+            background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(17, 24, 39, 0.95));
+            border: 2px solid var(--accent-orange);
+            border-radius: 1.5rem;
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .cta-call-box h2 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 1.2rem;
+            color: #fff;
+        }
+
+        .cta-call-box p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 2.5rem auto;
+            line-height: 1.8;
+        }
+
+        .big-phone-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-light));
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 900;
+            padding: 1.25rem 3rem;
+            border-radius: 4rem;
+            box-shadow: 0 10px 30px rgba(249, 115, 22, 0.5);
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+        }
+
+        .big-phone-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(249, 115, 22, 0.7);
+        }
+
+        .cta-features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* FAQ DISPLAY */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 0.85rem;
+            padding: 2rem;
+        }
+
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--accent-orange);
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-answer {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #05080e;
+            padding: 4.5rem 0 2rem 0;
+            border-top: 1px solid var(--border-glass);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 3.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            font-weight: 800;
+        }
+
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 0.85rem; }
+        .footer-links a {
+            color: var(--text-muted);
+            transition: color 0.2s;
+            font-size: 0.92rem;
+        }
+        .footer-links a:hover { color: var(--accent-orange); }
+
+        @media (max-width: 992px) {
+            .hero-grid, .grid-2 {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-ctas { justify-content: center; }
+            .nav-menu { display: none; }
+            .hero-title { font-size: 2.6rem; }
+            .section-title { font-size: 2.1rem; }
+            .big-phone-btn { font-size: 1.3rem; padding: 1rem 2rem; }
+            .cta-call-box h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container nav-container">
+        <a href="#" class="logo">RUMANA<span>.sk</span></a>
+        <ul class="nav-menu">
+            <li><a href="#domov" class="nav-link">Domov</a></li>
+            <li><a href="#o-nas" class="nav-link">O nás</a></li>
+            <li><a href="#sluzby" class="nav-link">Služby</a></li>
+            <li><a href="#postup" class="nav-link">Postup</a></li>
+            <li><a href="#technika" class="nav-link">Technika</a></li>
+            <li><a href="#cennik" class="nav-link">Cenník</a></li>
+            <li><a href="#lokality" class="nav-link">Lokality SK & CZ</a></li>
+            <li><a href="#sprievodca" class="nav-link">Sprievodca</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="tel:+421905835191" class="phone-link">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                +421 905 835 191
+            </a>
+            <a href="tel:+421905835191" class="btn btn-primary">Zavolať ihneď</a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO SEKCIA -->
+<section id="domov" class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-badge">DOPRAVA STROJA ZADARMO | BEZ POPLATKOV ZA KILOMETRE</span>
+            <h1 class="hero-title">Špecializované zemné a výkopové práce v SR aj ČR</h1>
+            <p class="hero-desc">Sme profesionáli v oblasti zakladania stavieb, výkopov pre inžinierske siete, betónové žumpy, ČOV, terénnych úprav a odvozu materiálu dumpermi. S modernými minibagromi Takeuchi realizujeme presné výkopy aj v tých najstiesnenejších priestoroch bez poškodenia vášho pozemku. Dopravu strojov máte u nás vždy zadarmo!</p>
+            <div class="hero-ctas">
+                <a href="tel:+421905835191" class="btn btn-primary">Zavolať: 0905 835 191</a>
+                <a href="#lokality" class="btn btn-secondary">Kde všade pôsobíme?</a>
+            </div>
+        </div>
+        
+        <div class="vector-illustration">
+            <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="180" width="360" height="12" rx="6" fill="#334155"/>
+                <path d="M60 170 H220 C230 170 235 160 230 150 L200 110 C195 102 185 100 175 100 H80 C70 100 60 110 60 120 Z" fill="#f97316"/>
+                <rect x="75" y="110" width="50" height="40" rx="4" fill="#0f172a"/>
+                <circle cx="85" cy="180" r="18" fill="#1e293b" stroke="#f97316" stroke-width="4"/>
+                <circle cx="140" cy="180" r="18" fill="#1e293b" stroke="#f97316" stroke-width="4"/>
+                <circle cx="195" cy="180" r="18" fill="#1e293b" stroke="#f97316" stroke-width="4"/>
+                <rect x="65" y="172" width="150" height="16" rx="8" fill="none" stroke="#64748b" stroke-width="4"/>
+                <path d="M190 120 L270 70 L320 130 L350 120" stroke="#f97316" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M350 120 L370 145 L340 160 Z" fill="#fb923c"/>
+            </svg>
+            <div style="margin-top: 1rem; text-align: center;">
+                <strong style="color: var(--accent-orange); font-size: 1.15rem;">Férové výkopové práce bez skrytých poplatkov</strong>
+                <p style="color: var(--text-muted); font-size: 0.88rem;">Doprava minibagrov a dumperov je pre všetkých zákazníkov v celej SR a ČR bezplatná.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ŠTATISTIKY -->
+<section class="section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="glass-card stat-card">
+                <div class="stat-value">2008</div>
+                <div class="stat-label">Rok založenia firmy RUMANA</div>
+            </div>
+            <div class="glass-card stat-card">
+                <div class="stat-value">3 500+</div>
+                <div class="stat-label">Úspešne dokončených zákaziek</div>
+            </div>
+            <div class="glass-card stat-card">
+                <div class="stat-value">0 € / km</div>
+                <div class="stat-label">Doprava strojov v SR a ČR</div>
+            </div>
+            <div class="glass-card stat-card">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Dôraz na presnosť a čistotu</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- O NÁS A TRADÍCIA -->
+<section id="o-nas" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">O spoločnosti RUMANA</h2>
+        <p class="section-subtitle text-center">Skúsenosti, spoľahlivosť a špičkový park stavebnej techniky pre vaše projekty.</p>
+
+        <div class="grid-2">
+            <div class="glass-card">
+                <h3 style="color: var(--accent-orange); margin-bottom: 1rem;">Už od roku 2008 na stavebnom trhu</h3>
+                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem;">
+                    Spoločnosť <strong>RUMANA</strong> sa od svojho vzniku v roku 2008 profiluje ako stabilný a vysoko profesionálny partner v oblasti zemných, výkopových a terénnych prác. Špecializujeme sa na precízne bagrovanie v úzkych prístupoch, okolo stojacich stavieb a na citlivých pozemkoch.
+                </p>
+                <p style="color: var(--text-muted); line-height: 1.8;">
+                    Naším hlavným poslaním je dodávať zákazníkom maximálnu kvalitu bez zbytočnej záťaže pre ich rozpočet. Práve preto sme zaviedli trvalú garanciu: <strong>dopravu techniky neúčtujeme</strong>. Klienti na Slovensku (rumana.sk) aj v Českej republike (rumana.cz) platia výhradne efektívne odpracované hodiny na stavenisku.
+                </p>
+            </div>
+
+            <div class="glass-card">
+                <h3 style="color: var(--accent-orange); margin-bottom: 1rem;">Prečo si vybrať práve nás?</h3>
+                <ul style="color: var(--text-muted); list-style: none; line-height: 2;">
+                    <li>✓ <strong>Bezplatná doprava strojov:</strong> Žiadne účtovanie kilometrov za prepravník či podvalník.</li>
+                    <li>✓ <strong>Pásová technika Takeuchi:</strong> Šetrné gumové pásy nezničia váš trávnik ani dlažbu.</li>
+                    <li>✓ <strong>Dumper doprava v teréne:</strong> Rýchly a čistý odvoz zeminy 4x4 a pásovými dumpermi.</li>
+                    <li>✓ <strong>Kompletné služby:</strong> Od výkopu pasov cez siete, žumpy, ČOV až po záverečnú niveláciu.</li>
+                    <li>✓ <strong>Pôsobnosť SR a ČR:</strong> Pokrývame široké územie západného, stredného, severného aj južného SK a ČR.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TECHNOLOGICKÝ POSTUP -->
+<section id="postup" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">Ako prebiehajú výkopové práce s nami</h2>
+        <p class="section-subtitle text-center">Štandardizovaný postup zaručuje bezpečnosť, presnosť a dodržanie časového harmonogramu.</p>
+
+        <div class="grid-3">
+            <div class="glass-card">
+                <div class="service-icon">1</div>
+                <h3>1. Rýchly telefonický kontakt</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Zavoláte nám na +421 905 835 191, preberieme parametre vášho projektu, typ zeminy, prístupové cesty a obratom dohodneme termín realizácie.</p>
+            </div>
+            <div class="glass-card">
+                <div class="service-icon">2</div>
+                <h3>2. Príprava a zameranie terénu</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Na stavenisku skontrolujeme výšky a inžinierske siete. Navrhneme najvhodnejší typ minibagra a dumpera tak, aby práca prebiehala plynulo a bez rizika škôd.</p>
+            </div>
+            <div class="glass-card">
+                <div class="service-icon">3</div>
+                <h3>3. Samotná realizácia a odvoz</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Náš skúsený strojník realizuje výkopové práce minibagrom Takeuchi. Vyťaženú zeminu okamžite nakladáme na dumpery a odvážame na určené miesto.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TECHNIKA -->
+<section id="technika" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">Moderný a šetrný strojový park</h2>
+        <p class="section-subtitle text-center">Spoliehame sa výhradne na špičkovú japonskú a britskú stavebnú techniku.</p>
+
+        <div class="grid-3">
+            <div class="glass-card">
+                <div class="service-icon">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2m14 0V9a2 2 0 0 0-2-2M5 11V9a2 2 0 0 1 2-2m0 0V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M7 7h10"></path></svg>
+                </div>
+                <h3>Pásové Minibagre Takeuchi</h3>
+                <p style="color: var(--accent-orange); margin: 0.5rem 0; font-size: 0.9rem;">Japonská precíznosť: Takeuchi TB015 / TB216 / TB125</p>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Minibagre Takeuchi patria medzi absolútnu špičku v kategórii stredných a kompaktných strojov. Vďaka gumovým pásom eliminujú tlak na pôdu, čo zabraňuje popraskaniu obkladov, dlažby a trávnikov. Skvelý dosah a vyladený hydraulický systém prinášajú vysokú hodinovú produktivitu.</p>
+            </div>
+
+            <div class="glass-card">
+                <div class="service-icon">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 17a5 5 0 0 1 10 0H8zm0-4h10m-5-9v5"></path></svg>
+                </div>
+                <h3>Stavebné Dumpery Thwaites</h3>
+                <p style="color: var(--accent-orange); margin: 0.5rem 0; font-size: 0.9rem;">Thwaites 4x4 & Pásové terénne dumpery</p>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Klasické nákladné vozidlá sa často na úzkych alebo premokrených záhradách nedostanú k výkopu. Naše kompaktné 4x4 a pásové dumpery Thwaites rýchlo prevezú tony zeminy, kameniva a sute bez toho, aby zničili okolité oplotenie či výsadbu.</p>
+            </div>
+
+            <div class="glass-card">
+                <div class="service-icon">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3>Príslušenstvo a prídavné náradie</h3>
+                <p style="color: var(--accent-orange); margin: 0.5rem 0; font-size: 0.9rem;">Podkopové, svahovacie a hydraulické lyžice</p>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Disponujeme širokou škálou podkopových lyžíc rôznych šírok (30 cm, 40 cm, 50 cm, 60 cm, 80 cm) a svahovacími naklápacími hydraulickými lyžicami pre dokonalé tvarovanie svahov a finálne úpravy záhrad.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CENNÍK SERVICES & PRICING -->
+<section id="cennik" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">Transparentný Cenník služieb (rumana.sk)</h2>
+        <p class="section-subtitle text-center">U nás neplatíte žiadne kilometrovné. Doprava všetkých strojov v celej SR a ČR je zadarmo!</p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stroj / Druh práce</th>
+                        <th>Popis a špecifikácia</th>
+                        <th>Cena za hodinu</th>
+                        <th>Poplatok za dopravu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Minibagre Takeuchi (1.8t - 3t)</strong></td>
+                        <td>Výkopy základov, rýh pre siete, žumpy, ČOV, bazény, svahovanie</td>
+                        <td><strong class="text-accent">Od 45 € / hod</strong></td>
+                        <td><strong style="color: #4ade80;">ZADARMO (0 € / km)</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dumpery 4x4 / Pásové dumpery</strong></td>
+                        <td>Presun zeminy, kameniva a sute po stavenisku a náročnom teréne</td>
+                        <td><strong class="text-accent">Dohodou podľa projektu</strong></td>
+                        <td><strong style="color: #4ade80;">ZADARMO (0 € / km)</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Odvoz zeminy a likvidácia sute</strong></td>
+                        <td>Naloženie minibagrom a transport odvozovými vozidlami na skládku</td>
+                        <td><strong class="text-accent">Individuálne podľa objemu</strong></td>
+                        <td>Dohodou</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dovoz štrku, kameniva a makadamu</strong></td>
+                        <td>Doručenie sypkých podkladových materiálov požadovanej frakcie</td>
+                        <td><strong class="text-accent">Podľa tonáže a materiálu</strong></td>
+                        <td>Dohodou</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Práce v náročnom a skalnatom teréne</strong></td>
+                        <td>Skaly, koryta rýd, silne ílovité podložie, strmé svahy</td>
+                        <td><strong class="text-accent">Individuálna kalkulácia</strong></td>
+                        <td><strong style="color: #4ade80;">ZADARMO (0 € / km)</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="text-align: center; margin-top: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">
+            * Uvedené hodinové sadzby sú konečné. Garantujeme nulové poplatky za prepravu strojov na stavenisko.
+        </div>
+    </div>
+</section>
+
+<!-- ROZSIAHLE SLUŽBY DETAILE -->
+<section id="sluzby" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">Prehľad 24 špecializovaných zemných prác</h2>
+        <p class="section-subtitle text-center">Zabezpečujeme kompletné výkopové portfólio pre novostavby, rekonštrukcie aj úpravy krajiny.</p>
+
+        <div class="grid-4">
+            <div class="glass-card">
+                <h4>1. Zemné práce minibagrom</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Precízne bagrovanie v záhradách, dvoroch a stiesnených miestach s vysokou obratnosťou.</p>
+            </div>
+            <div class="glass-card">
+                <h4>2. Výkopy základov RD</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Hĺbenie základových pásov a dosiek pre rodinné domy, garáže a rekreačné chaty.</p>
+            </div>
+            <div class="glass-card">
+                <h4>3. Výkopy pre betónové žumpy</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Príprava hlbokých stavebných jám s rovným dnom pre osadenie ťažkých betónových nádrží.</p>
+            </div>
+            <div class="glass-card">
+                <h4>4. Osádzanie plastových nádrží</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Presné výkopy pre samonosné plastové jímky, akumulačné nádrže a vodomerné šachty.</p>
+            </div>
+            <div class="glass-card">
+                <h4>5. Domové ČOV</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Výkopy a pieskové podložia pre čistiarne odpadových vôd vrátane prepájania potrubí.</p>
+            </div>
+            <div class="glass-card">
+                <h4>6. Retenčné nádrže na vodu</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Hĺbenie rozmerných jám pre podzemné zásobníky dažďovej vody a vsakové systémy.</p>
+            </div>
+            <div class="glass-card">
+                <h4>7. Kanalizačné prípojky</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Líniové výkopy rýh s požadovaným spádom pre domové a priemyselné kanalizácie.</p>
+            </div>
+            <div class="glass-card">
+                <h4>8. Vodovodné prípojky</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Výkopy v nezamŕzajúcej hĺbke pre bezpečné uloženie vodovodných potrubí.</p>
+            </div>
+            <div class="glass-card">
+                <h4>9. Elektrické a plynové prípojky</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Úzke výkopové ryhy pre káblové vedenia, optické siete a plynofikácie.</p>
+            </div>
+            <div class="glass-card">
+                <h4>10. Drenáže a odvodnenie</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Výkopy obvodových drenáží rodinných domov proti vlhkosti a podzemnej vode.</p>
+            </div>
+            <div class="glass-card">
+                <h4>11. Terénne úpravy a nivelácia</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Vyrovnávanie pozemkov, rozŕňanie ornice, modelovanie záhrad a príprava pre trávniky.</p>
+            </div>
+            <div class="glass-card">
+                <h4>12. Svahovanie a modelovanie</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Úprava nebezpečných svahov, terasovanie terénu hydraulickou naklápacou lyžicou.</p>
+            </div>
+            <div class="glass-card">
+                <h4>13. Výkopy pre bazény a vírivky</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Milimetrovo presné výkopy pre plastové, laminátové a murované bazény.</p>
+            </div>
+            <div class="glass-card">
+                <h4>14. Príprava pod zámkovú dlažbu</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Odkrývanie zeminy, hĺbenie kufra pre chodníky, parkoviská a príjazdové cesty.</p>
+            </div>
+            <div class="glass-card">
+                <h4>15. Výkopy pre ploty a oporné múry</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Líniové výkopy základových pásov pre betónové oplotenia a oporné systémy.</p>
+            </div>
+            <div class="glass-card">
+                <h4>16. Odstránenie koreňov a pňov</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Vytrhávanie starých pňov, náletových drevín a vyčistenie zarastených pozemkov.</p>
+            </div>
+            <div class="glass-card">
+                <h4>17. Demolácie menších stavieb</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Búranie starých garáží, chatiek, betónových plôch a základov minibagrom.</p>
+            </div>
+            <div class="glass-card">
+                <h4>18. Odvoz a presun zeminy dumpermi</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Preprava materiálu po pozemku aj v blatistom teréne bez poškodenia trávnika.</p>
+            </div>
+            <div class="glass-card">
+                <h4>19. Dovoz a zásyp podkladových štrkov</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Dodávka makadamu, kameniva rôznych frakcií a ich ronomerné vrstvenie.</p>
+            </div>
+            <div class="glass-card">
+                <h4>20. Odstránenie ornice (skrývka)</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Strhnutie vrchnej úrodnej vrstvy pôdy pred začatím stavby a jej uloženie.</p>
+            </div>
+            <div class="glass-card">
+                <h4>21. Výkopy pre šachty a pätky</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Lokálne výkopy pre pätky hal, prístreškov, terás a technologických objektov.</p>
+            </div>
+            <div class="glass-card">
+                <h4>22. Čistenie priekop a koryt</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Prehlbovanie odvodňovacích kanálov, čistenie potokov a nánosov bahna.</p>
+            </div>
+            <div class="glass-card">
+                <h4>23. Nakladanie sute a materiálu</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Rýchle nakladanie stavebného odpadu, kameňa a zeminy na odvozové vozidlá.</p>
+            </div>
+            <div class="glass-card">
+                <h4>24. Zimná a údržbová príprava</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">Pohotovostné zemné práce, úpravy terénu pred zimou a havarijné výkopy.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEKCIA LOKALITY SK & CZ - KOMPLETNÝ PROFESIONÁLNY ROZPIS -->
+<section id="lokality" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">Kompletný rozpis lokalít v SR a ČR</h2>
+        <p class="section-subtitle text-center">Detailný prehľad výhod, vykonávaných prác a špecifík pre každú lokalitu. Garantujeme nulové poplatky za dopravu strojov do každého mesta a jeho širokého okolia!</p>
+
+        <!-- SLOVENSKO HEADER -->
+        <div class="country-header">
+            <span class="country-flag">🇸🇰</span>
+            <h3>Slovenská republika (Západné, Stredné a Južné Slovensko)</h3>
+        </div>
+
+        <div class="grid-3" style="margin-bottom: 4rem;">
+            <!-- BRATISLAVA -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Bratislava</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Bratislave:</div>
+                    <p class="location-text">Hustá zástavba a stiesnené mestské pozemky vyžadujú mimoriadne šetrnú techniku. Naše minibagre Takeuchi s gumovými pásmi umožňujú bezpečný prejazd aj cez úzke brány a dvory v Starom Meste, Ružinove či Kolibe bez poškodenia okolitej dlažby.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Flexibilný nástup na prácu do 24 hodín</li>
+                        <li><span class="check">✓</span> Tiché a šetrné stroje vhodné do obytných zón</li>
+                        <li><span class="check">✓</span> Nulové kilometrové poplatky po celej BA</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy pre inzinierske siete, bazény na kľúč, zakladanie rodinných domov, odvoz sute dumpermi, úpravy mestských záhrad a dvorov.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať výkop v Bratislave →</a>
+            </div>
+
+            <!-- TRNAVA -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Trnava</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Trnave:</div>
+                    <p class="location-text">Vzhľadom na rýchly rozvoj nových obytných štvrtí v Trnave a okolí poskytujeme komplexnú prípravu pozemkov pre novostavby. Zvládame špecifické ílovité podložie typické pre trnavskú tabuľu.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Znalosť lokálnych podmienok zeminy</li>
+                        <li><span class="check">✓</span> Expresný dovoz podkladového makadamu</li>
+                        <li><span class="check">✓</span> Presné výkopy základových pásov</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy pre základové dosky, betonáž žúmp, osádzanie ČOV, terénne úpravy novostavieb, príprava kuprov pod zámkové dlažby.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať výkop v Trnave →</a>
+            </div>
+
+            <!-- NITRA -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Nitra</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Nitre:</div>
+                    <p class="location-text">Členitý terén v okolí Zobora aj rovinaté časti Nitry vyžadujú rôznorodú techniku. Naše svahovacie lyžice a dumpery Thwaites si poradia aj so strmými svahmi a skalnatým podložím.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Špecializácia na svahovanie a modelovanie</li>
+                        <li><span class="check">✓</span> Dumper preprava po zvlnenom teréne</li>
+                        <li><span class="check">✓</span> Bezplatný príjazd po celom okrese</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Terasovanie svahovitých pozemkov, výkopy oporných múrov, drenáže domov, pripájanie na verejnú kanalizáciu a vodovod.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať výkop v Nitre →</a>
+            </div>
+
+            <!-- PIEŠŤANY -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Piešťany</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Piešťanoch:</div>
+                    <p class="location-text">Piešťansko sa vyznačuje vyššou hladinou podzemnej vody pri rieke Váh. Realizujeme hydroizolačné drenážne výkopy a precízne osádzanie vodotesných betónových žúmp a nádrží.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Odbornosť pri výkopoch v blízkosti podzemných vôd</li>
+                        <li><span class="check">✓</span> Šetrný prístup k okolitým záhradám</li>
+                        <li><span class="check">✓</span> Žiadne skryté poplatky za dopravu</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Obvodové drenáže stavieb, osádzanie retenčných nádrží na dažďovú vodu, výkopy bazénov, úpravy záhradných plôch.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať výkop v Piešťanoch →</a>
+            </div>
+
+            <!-- NOVÉ MESTO NAD VÁHOM -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Nové Mesto n/V</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Novom Meste:</div>
+                    <p class="location-text">Poskytujeme rýchly servis pre priemyselné objekty aj súkromných staviteľov v Novom Meste nad Váhom a podhorských obciach. Zvládame aj kamenistejší terén pri Považskom Inovci.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Odolné podkopové lyžice na štrk a skalu</li>
+                        <li><span class="check">✓</span> Odvoz sute a starých betónov</li>
+                        <li><span class="check">✓</span> Garancia dodržania rozpočtu</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy inžinierskych sietí, skrývka ornice, základy pre haly a prístrešky, čistenie zarastených pozemkov.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Novom Meste →</a>
+            </div>
+
+            <!-- HLOHOVEC -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Hlohovec</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Hlohovci:</div>
+                    <p class="location-text">Členitý terén Hlohovca a blízkych vinohradníckych oblastí vyžaduje stabilné stroje s dobrou manévrovateľnosťou. Naše minibagre Takeuchi s prehľadom zvládajú práce na terasách.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Skúsenosti s výkopmi vo vinohradníckych svahoch</li>
+                        <li><span class="check">✓</span> Kompaktné dumpery pre úzke prístupy</li>
+                        <li><span class="check">✓</span> Bezplatná preprava stroja na miesto</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy pre oporné múriky, rekonštrukcie kanalizácií, výkopy pätiek, modelovanie terénu, úprava prístupových ciest.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať výkop v Hlohovci →</a>
+            </div>
+
+            <!-- PEZINOK -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Pezinok</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Pezinku:</div>
+                    <p class="location-text">Malokarpatská oblasť je špecifická kamenistou pôdou a úzkymi historickými uličkami. S našou kompaktnou technikou sa bez problémov dostaneme aj do uzavretých dvorov vinohradníckych domov.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Kompaktné rozmery strojov pre starú zástavbu</li>
+                        <li><span class="check">✓</span> Šetrnosť k historickým dlažbám</li>
+                        <li><span class="check">✓</span> Nulové dopravné náklady</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy pivníc, osádzanie ČOV a nádrží na víno či vodu, úprava dvora, drenáže starých kamenných domov.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať výkop v Pezinku →</a>
+            </div>
+
+            <!-- SENICA -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Senica</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Senici:</div>
+                    <p class="location-text">Piesčité a ílovité zeminy na Záhorí vyžadujú správne zvolený postup bagrovania, aby nedochádzalo k zosypávaniu stien výkopu. Náš strojník má dlhoročné skúsenosti s týmto typom pôdy.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Bezpečné hĺbenie rýh v piesčitom podloží</li>
+                        <li><span class="check">✓</span> Rýchle dodanie podkladových štrkov</li>
+                        <li><span class="check">✓</span> Doprava zdarma po celom Záhorí</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy pre betónové žumpy, rodinné domy, vodovodné a elektrické prípojky, úpravy pozemkov po výstavbe.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať výkop v Senici →</a>
+            </div>
+
+            <!-- HOLÍČ A SKALICA -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Holíč / Skalica</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Holíči a Skalici:</div>
+                    <p class="location-text">Pohraničná oblasť s Českom je pre nás domovským terénom. Vďaka výbornej dostupnosti zabezpečujeme okamžitý nástup na zákazky bez ohľadu na náročnosť terénu.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Bleskový dojazd v rámci prihraničného regiónu</li>
+                        <li><span class="check">✓</span> Odvoz výkopovej zeminy dumpermi</li>
+                        <li><span class="check">✓</span> Komplexný servis pre rodinné domy</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Zakladanie stavieb, kanalizačné prípojky, výkopy bazénov, vytrhávanie pňov a náletových drevín, nivelácia terénu.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Holíči a Skalici →</a>
+            </div>
+
+            <!-- TRENČÍN -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Trenčín</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Trenčíne:</div>
+                    <p class="location-text">V Trenčíne a okolí (Brezina, Zlatovce, Belá) často narážame na tvrdšie skalnaté podložie. S našimi hydraulickými minibagromi dokážeme realizovať výkopy aj v náročných horninách.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Výkonná hydraulika pre skalnatý terén</li>
+                        <li><span class="check">✓</span> Svahovanie záhrad vo svahovitých štvrtiach</li>
+                        <li><span class="check">✓</span> Bezplatný príjazd techniky</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Hĺbenie základových pásov, úpravy terénov okolo novostavieb, výkopy pre plyn a elektrinu, búranie starých betónov.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať výkop v Trenčíne →</a>
+            </div>
+
+            <!-- MYJAVA -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Myjava</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás na Myjave:</div>
+                    <p class="location-text">Kopaničiarsky región Myjavy sa vyznačuje rozsiahlymi pozemkami s ťažšou dostupnosťou. Naše pásové dumpery a minibagre Takeuchi sú ideálne na odľahlé kopanice a chalupy.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Technika schopná práce v kopcovitom teréne</li>
+                        <li><span class="check">✓</span> Úprava príjazdových ciest k chatám</li>
+                        <li><span class="check">✓</span> Doprava zdarma aj na odľahlé kopanice</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy pre domové ČOV, biologické septiky, drenáže chalúp, vyrovnávanie svahov, čistenie lesných pňov.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať výkop na Myjave →</a>
+            </div>
+
+            <!-- SEREĎ, GALANTA, ŠAĽA -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Sereď / Galanta / Šaľa</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v regióne Galanta/Šaľa:</div>
+                    <p class="location-text">Rovinatý terén Podunajskej nížiny umožňuje veľmi rýchly postup výkopových prác. Ponúkame vysoký výkon hĺbenia a presné nivelácie pre pokládku zámkových dlažieb.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Vysoká rýchlosť realizácie základových dosiek</li>
+                        <li><span class="check">✓</span> Presné plošné strhávanie ornice</li>
+                        <li><span class="check">✓</span> Bezplatná preprava po celom regióne</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy rodinných domov, osádzanie veľkokapacitných betónových žúmp, závlahové systémy, príprava kufra pod dlažbu.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Seredi / Galante →</a>
+            </div>
+
+            <!-- MALACKY, STUPAVA, SENEC -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Malacky / Stupava / Senec</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Senci a na Záhorí:</div>
+                    <p class="location-text">Dynamicky rastúce satelitné mestá okolo Bratislavy trpia nedostatkom voľného priestoru medzi stavbami. Naše minibagre pracujú milimetrovo presne popri susedných plotoch.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Absolútna šetrnosť k oploteniu a stavbám</li>
+                        <li><span class="check">✓</span> Pohotový nástup pre novostavby</li>
+                        <li><span class="check">✓</span> Nulový doplatok za kilometre</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy pre bazény, retenčné nádrže, prípojky inžinierskych sietí, finálna úprava ornice pred výsadbou trávnika.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Senci / Stupave →</a>
+            </div>
+
+            <!-- ŠAMORÍN A DUNAJSKÁ STREDA -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Šamorín / Dunajská Streda</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás na Žitnom ostrove:</div>
+                    <p class="location-text">Špecifické štrkopieskové podložie Žitného ostrova vyžaduje odborný prístup pri hĺbení vsakových jám a bazénov. Zabezpečujeme čisté výkopy bez zosypávania.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Skúsenosti so štrkovým podložím</li>
+                        <li><span class="check">✓</span> Odvoz prebytočného štrkopiesku</li>
+                        <li><span class="check">✓</span> Doprava strojov zadarmo</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy vsakových studní, bazénové jamy, základy rodinných domov, terénne úpravy novostavieb.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Dunajskej Strede →</a>
+            </div>
+
+            <!-- PARTIZÁNSKE, BÁNOVCE, TOPOĽČANY -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Topoľčany / Bánovce / Partizánske</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v regióne Ponitria:</div>
+                    <p class="location-text">Pokrývame kompletnú oblasť hornej aj strednej Nitry. Zabezpečujeme výkopy na rovinách aj v podhorských oblastiach Tribeča a Inovca.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Všestranné využitie podkopových lyžíc</li>
+                        <li><span class="check">✓</span> Rýchly odvoz zeminy dumpermi</li>
+                        <li><span class="check">✓</span> Žiadne kilometrové príplatky</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Inžinierske siete, výkopy pre betónové žumpy a ČOV, úpravy záhrad, odvodnenie vlhkých domov.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Topoľčanoch →</a>
+            </div>
+
+            <!-- POVAŽSKÁ BYSTRICA A ŽILINA -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Považská Bystrica / Žilina</span>
+                        <span class="location-badge-free">Doprava 0 €</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás na Hornom Považí:</div>
+                    <p class="location-text">Náročné horské podložie a svahovité pozemky v okolí Žiliny a Považskej Bystrice zvládame vďaka vysokovýkonným minibagrom Takeuchi s naklápacou hlaveňou.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Špičkové naklápacie svahovacie lyžice</li>
+                        <li><span class="check">✓</span> Skúsenosti s výkopmi v kamenistej pôde</li>
+                        <li><span class="check">✓</span> Doprava bez poplatkov aj do horských obcí</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Terasovanie pozemkov, výkopy oporných systémov, drenáže základov, prístupové cesty vo svahu.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Žiline a PB →</a>
+            </div>
+        </div>
+
+        <!-- ČESKÁ REPUBLIKA HEADER -->
+        <div class="country-header">
+            <span class="country-flag">🇨🇿</span>
+            <h3>Česká republika (Morava, Južná Morava a Čechy)</h3>
+        </div>
+
+        <div class="grid-3">
+            <!-- HODONÍN A BŘECLAV -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Hodonín / Břeclav</span>
+                        <span class="location-badge-free">Doprava 0 CZK</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Hodoníne a Břeclavi:</div>
+                    <p class="location-text">Juhomoravský región je pre nás vďaka blízkosti hraníc dostupný do hodiny. Ponúkame špičkové bagrovanie vo vinohradníckych oblastiach aj v zastavaných obciach.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Bezkonkurenčná rýchlosť pristavenia stroja</li>
+                        <li><span class="check">✓</span> Nulové náklady na prepravu (0 CZK / km)</li>
+                        <li><span class="check">✓</span> Šetrnosť k vinohradom a dlažbám</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy pre vínne pivnice, základové pásy rodinných domov, žumpy, plastové nádrže, úpravy záhrad.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Hodoníne / Břeclavi →</a>
+            </div>
+
+            <!-- ZNOJMO A MIKULOV -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Znojmo / Mikulov</span>
+                        <span class="location-badge-free">Doprava 0 CZK</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Znojme a Mikulove:</div>
+                    <p class="location-text">Vápencové podložie a skalnaté úseky Pálavy vyžadujú výkonné hydraulické prídavné zariadenia. Naše stroje bez problémov zvládnu aj tvrdé podmienky.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Vhodné stroje pre skalnaté podložie</li>
+                        <li><span class="check">✓</span> Presné výkopy oporných múrikov vo svahu</li>
+                        <li><span class="check">✓</span> Bezplatná preprava po celom okrese</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy vo svahovitých záhradách, retenčné nádrže, inžinierske siete, drenáže historických objektov.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Znojme / Mikulove →</a>
+            </div>
+
+            <!-- BRNO A VYŠKOV -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Brno / Vyškov</span>
+                        <span class="location-badge-free">Doprava 0 CZK</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Brne:</div>
+                    <p class="location-text">V Brne a jeho mestskej aglomerácii je často problém s úzkymi prejazdmi a hustou dopravou. Naše kompaktné soupravy minibagrov a dumperov zaberajú minimálne miesto na ulici.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Ideálne do hustej mestskej zástavby Brna</li>
+                        <li><span class="check">✓</span> Tichý chod vhodný do obytných štvrtí</li>
+                        <li><span class="check">✓</span> Garancia nulového kilometrovného</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Výkopy základu pre rodinné domy, bazénové jamy, odvoz sute dumperom, kanalizačné prípojky.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať výkop v Brne →</a>
+            </div>
+
+            <!-- UHERSKÉ HRADIŠTĚ, UHERSKÝ BROD, ZLÍN -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Uherské Hradiště / Zlín</span>
+                        <span class="location-badge-free">Doprava 0 CZK</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Zlínskom kraji:</div>
+                    <p class="location-text">Kopcovitý terén Zlínska a Slovácka vyžaduje stabilné pásové bagre a terénne 4x4 dumpery Thwaites, ktoré sa neprevrátia ani v strmých podmienkach.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Bezpečná práca v náročnom teréne</li>
+                        <li><span class="check">✓</span> Svahovanie hydraulickou lyžicou</li>
+                        <li><span class="check">✓</span> Zadarmo doprava stroja až k vám</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Modelovanie terénu, výkopy pre rodinné domy vo svahu, drenážne systémy, pripájanie inžinierskych sietí.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Zlíne / Hradišti →</a>
+            </div>
+
+            <!-- OLOMOUC A KROMĚŘÍŽ -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Olomouc / Kroměříž</span>
+                        <span class="location-badge-free">Doprava 0 CZK</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás na Strednej Morave:</div>
+                    <p class="location-text">Úrodná Haná ponúka skvelé podmienky na presné plošné terénne úpravy a hĺbenie základových pásov bez rizika poškodenia ornice.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Šetrné strhávanie a separácia ornice</li>
+                        <li><span class="check">✓</span> Rýchle výkopové práce pri novostavbách</li>
+                        <li><span class="check">✓</span> Doprava techniky zadarmo</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Skrývka ornice, výkopy základov, osádzanie ČOV a žúmp, nakladanie sute, finálne urovnanie pozemku.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Olomouci / Kroměříži →</a>
+            </div>
+
+            <!-- PRAHA, NYMBURK, PODĚBRADY, KOLÍN -->
+            <div class="location-card">
+                <div>
+                    <div class="location-title-box">
+                        <span class="location-name">Praha / Nymburk / Kolín</span>
+                        <span class="location-badge-free">Doprava 0 CZK</span>
+                    </div>
+                    <div class="location-block-title">Prečo si vybrať nás v Prahe a Stredných Čechách:</div>
+                    <p class="location-text">Pri väčších projektoch a komplexných zákazkách dovážame techniku aj do stredočeského regiónu. Zákazník neplatí žiadne vysoké pražské kilometrové sadzby za podvalník.</p>
+                    <div class="location-block-title">Benefity spolupráce:</div>
+                    <ul class="location-list">
+                        <li><span class="check">✓</span> Obrovská úspora na doprave oproti lokálnym firmám</li>
+                        <li><span class="check">✓</span> Kompaktné stroje ideálne pre pražské záhrady</li>
+                        <li><span class="check">✓</span> Profesionálny a čistý prístup k práci</li>
+                    </ul>
+                    <div class="location-block-title">Vykonávané práce:</div>
+                    <p class="location-text">Kompletná príprava pozemkov, výkopy pre inzinierske siete, bazény na kľúč, odvoz sute a zeminy dumpermi.</p>
+                </div>
+                <a href="tel:+421905835191" class="location-call-link">Objednať v Prahe a okolí →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ODBORNÝ SPRIEVODCA A ARTIKLE -->
+<section id="sprievodca" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">Sprievodca a tipy pre zemné práce</h2>
+        <p class="section-subtitle text-center">Prečítajte si užitočné informácie pred začatím výkopových prác na vašom pozemku.</p>
+
+        <div class="rich-text-card">
+            <h3>Ako správne pripraviť pozemok pred príchodom minibagra?</h3>
+            <p>Správna príprava staveniska pred príchodom bagra výrazne urýchli celú realizáciu a ušetrí váš čas aj financie. V prvom rade je nevyhnutné presne vyznačiť trasy inžinierskych sietí (elektrika, plyn, voda, optika). Ak nemáte presné vytýčenie, informujte nášho strojníka vopred.</p>
+            <p>Ďalším krokom je zabezpečenie prejazdnosti. Minibagre Takeuchi potrebujú pre prejazd šírku od 98 cm do 150 cm podľa typu stroja. Skontrolujte výšku brán, dočasné oplotenie či previsnuté konáre stromov.</p>
+            <ul>
+                <li>Vytýčte rohy stavby alebo trasy výkopov sprejom či kolíkmi.</li>
+                <li>Odstráňte z trate výkopu veľké kamene, stavebný odpad alebo prekážky.</li>
+                <li>Určite miesto, kde sa bude vyťažená zemina uskladňovať alebo nakladať na dumper.</li>
+            </ul>
+        </div>
+
+        <div class="rich-text-card">
+            <h3>Výhody kombinácie Minibagra a Dumpera Thwaites</h3>
+            <p>Častým problémom pri výkopových prácach v obývaných oblastiach je odvoz zeminy z dvora na ulica alebo kontajner. Klasické Tatra alebo Avia vozidlá sa kvôli svojej hmotnosti a rozmerom nedostanú do záhrady a zničili by zámkovú dlažbu či trávnik.</p>
+            <p>Riešením je naša dvojica: <strong>Minibager Takeuchi + Kompaktný Dumper Thwaites</strong>. Dumper prejde aj cez úzke bránky, odvezie naraz až 1.5 až 3 tony materiálu a vďaka špeciálnym pneumatikám nezanecháva hlboké koľaje.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ SEKCIA -->
+<section id="faq" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">Často kladené otázky (FAQ)</h2>
+        <p class="section-subtitle text-center">Odpovede na najčastejšie otázky ohľadom dopravy, cien a realizácie výkopov.</p>
+
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">Skutočne neplatím za dopravu stroja vôbec nič?</div>
+                <div class="faq-answer">Áno, presne tak. Garancia dopravy zadarmo platí pre všetky zákazky na Slovensku aj v Českej republike. Neúčtujeme si žiadne kilometre za cestu prepravníka tam ani späť. Platíte výhradne za odpracovaný čas minibagra alebo dumpera.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Aké sú minimálne rozmery pre prejazd minibagra na môj pozemok?</div>
+                <div class="faq-answer">Naše najmenšie minibagre Takeuchi prejdú cez otvor široký iba 98 cm a vysoký cca 2 metre. Bez problémov sa dostaneme cez štandardnú záhradnú bránku, garáž či úzke uličky medzi domami.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Nezničí pásový bager moju novú zámkovú dlažbu alebo trávnik?</div>
+                <div class="faq-answer">Naše bagre sú vybavené špeciálnymi gumovými pásmi, ktoré rozkladajú hmotnosť stroja a nezanechávajú škrabance na dlažbe ani hlboké koľaje v trávniku. Pri otáčaní postupujeme maximálne šetrne.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Ako rýchlo viete nastúpiť na prácu po telefonáte?</div>
+                <div class="faq-answer">Vďaka viacerým strojným zostavám vieme vo väčšine prípadov nastúpiť do 24 až 48 hodín od zavolania. Pri havarijných stavoch (prasknuté potrubie, kanalizácia) reagujeme ihneď.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CHYTĽAVÁ A PÚTAVÁ CALL TO ACTION SEKCIA -->
+<section id="kontakt" class="section">
+    <div class="container">
+        <div class="cta-call-box">
+            <h2>Potrebujete kopať? Nečakajte na formuláre!</h2>
+            <p>
+                Každý stavebný projekt je jedinečný a najrýchlejší spôsob, ako zistiť presnú cenu a voľný termín, je priamy rozhovor. Zavolajte nám ešte dnes, preberieme vašu predstavu a okamžite vám navrhneme najlepšie riešenie s <strong>dopravou stroja ZADARMO</strong>!
+            </p>
+            
+            <div>
+                <a href="tel:+421905835191" class="big-phone-btn">
+                    <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    0905 835 191
+                </a>
+            </div>
+
+            <p style="font-size: 1rem; color: var(--accent-orange); font-weight: 700; margin-bottom: 0;">
+                Sme dostupní 7 dní v týždni. Volať môžete kedykoľvek od 7:00 do 20:00.
+            </p>
+
+            <div class="cta-features">
+                <span>✓ Okamžitá kalkulácia po telefóne</span>
+                <span>✓ Bezplatná obhliadka</span>
+                <span>✓ Doprava 0 € / 0 CZK po celej SR a ČR</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo" style="display: block; margin-bottom: 1rem;">RUMANA<span>.sk</span></a>
+                <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">
+                    Špecialista na výkopové, zemné a terénne práce minibagrom a dumpermi. Od roku 2008 dodávame špičkovú kvalitu s garanciou dopravy zadarmo v SR aj ČR.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Rýchle odkazovače</h4>
+                <ul class="footer-links">
+                    <li><a href="#o-nas">O spoločnosti</a></li>
+                    <li><a href="#sluzby">Služby a výkopy</a></li>
+                    <li><a href="#cennik">Cenník prác</a></li>
+                    <li><a href="#lokality">Rozpis lokalít SK & CZ</a></li>
+                    <li><a href="#faq">Často kladené otázky</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Hlavné Lokality</h4>
+                <ul class="footer-links">
+                    <li><a href="#lokality">Bratislava, Trnava, Nitra</a></li>
+                    <li><a href="#lokality">Piešťany, Nové Mesto, Hlohovec</a></li>
+                    <li><a href="#lokality">Pezinok, Senica, Holíč</a></li>
+                    <li><a href="#lokality">Hodonín, Znojmo, Brno</a></li>
+                    <li><a href="#lokality">Praha, Nymburk a okolie</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Priamy Kontakt</h4>
+                <p style="color: #fff; font-weight: 800; font-size: 1.2rem; margin-bottom: 0.5rem;">+421 905 835 191</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">E-mail: bagerdumper@gmail.com</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem;">Pôsobnosť: Celá Slovenská republika & Česká republika</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; border-top: 1px solid var(--border-glass); padding-top: 2rem; color: var(--text-muted); font-size: 0.85rem;">
+            © 2008 - 2026 RUMANA. Všetky práva vyhradené. Zemné a výkopové práce bez poplatkov za km.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+```
